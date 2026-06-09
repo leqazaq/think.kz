@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakbergen Urakbay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0e0e0e;
+      --card: #161616;
+      --border: #2a2a2a;
+      --text: #e8e6e0;
+      --muted: #666;
+      --hover: #1e1e1e;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      border: 1px solid var(--border);
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: -1px;
+    }
+
+    .name {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+    }
+
+    .handle {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+      padding-left: 0.1rem;
+    }
+
+    .group {
+      margin-bottom: 1.6rem;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 0.85rem 1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .link:hover {
+      background: var(--hover);
+      border-color: #333;
+    }
+
+    .icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+
+    .link-text {
+      flex: 1;
+    }
+
+    .link-name {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .link-sub {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+
+    .arrow {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .ig { background: #1a1a1a; }
+    .tg { background: #0d2137; }
+    .gh { background: #161b22; }
+    .li { background: #0a1628; }
+    .tw { background: #0d1b26; }
+    .ch { background: #1a1200; }
+    .li2 { background: #0a1a0a; }
+    .gr { background: #1a0a08; }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="profile">
+      <div class="avatar">BU</div>
+      <p class="name">Bakbergen Urakbay</p>
+      <p class="handle">think.kz</p>
+    </div>
+
+    <div class="group">
+      <p class="section-label">Social</p>
+
+      <a class="link" href="https://instagram.com/leqazaq" target="_blank">
+        <div class="icon ig">📸</div>
+        <div class="link-text">
+          <p class="link-name">Instagram</p>
+          <p class="link-sub">@leqazaq</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link" href="https://t.me/bakbergen" target="_blank">
+        <div class="icon tg">✈️</div>
+        <div class="link-text">
+          <p class="link-name">Telegram</p>
+          <p class="link-sub">@bakbergen</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link" href="https://t.me/leqazaq" target="_blank">
+        <div class="icon tg">📢</div>
+        <div class="link-text">
+          <p class="link-name">Telegram Channel</p>
+          <p class="link-sub">@leqazaq</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link" href="https://twitter.com/urakbay" target="_blank">
+        <div class="icon tw">𝕏</div>
+        <div class="link-text">
+          <p class="link-name">X / Twitter</p>
+          <p class="link-sub">@urakbay</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="group">
+      <p class="section-label">Professional</p>
+
+      <a class="link" href="https://linkedin.com/in/urakbay" target="_blank">
+        <div class="icon li">in</div>
+        <div class="link-text">
+          <p class="link-name">LinkedIn</p>
+          <p class="link-sub">@urakbay</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link" href="https://github.com/leqazaq" target="_blank">
+        <div class="icon gh">⌥</div>
+        <div class="link-text">
+          <p class="link-name">GitHub</p>
+          <p class="link-sub">leqazaq</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="group">
+      <p class="section-label">Interests</p>
+
+      <a class="link" href="https://chess.com/member/leqazaq" target="_blank">
+        <div class="icon ch">♟</div>
+        <div class="link-text">
+          <p class="link-name">Chess.com</p>
+          <p class="link-sub">@leqazaq</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link" href="https://lichess.org/@/leqazaq" target="_blank">
+        <div class="icon li2">♞</div>
+        <div class="link-text">
+          <p class="link-name">Lichess</p>
+          <p class="link-sub">@leqazaq</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a class="link" href="https://goodreads.com/leqazaq" target="_blank">
+        <div class="icon gr">📚</div>
+        <div class="link-text">
+          <p class="link-name">Goodreads</p>
+          <p class="link-sub">leqazaq</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+
+    <footer>
+      <a href="https://think.kz">think.kz</a>
+    </footer>
+
+  </div>
+</body>
+</html>
